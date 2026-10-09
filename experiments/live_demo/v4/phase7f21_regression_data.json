@@ -1,0 +1,593 @@
+{
+  "genuine": [
+    [
+      "sample_data/lfw/Angelina_Jolie\\05.jpg",
+      {
+        "new": {
+          "timestamp": 1791554249.6653721,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.5464214086532593,
+          "ema_model_a_similarity": 0.5464214086532593,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999479055404663,
+          "v4_p_synthetic": 0.16036583483219147,
+          "v4_predicted_class": 0,
+          "raw_predicted_state": "VERIFIED",
+          "ema_c_probs": [
+            0.9886194467544556,
+            0.010515771806240082,
+            0.0008647956419736147
+          ],
+          "final_ui_state": "VERIFIED",
+          "latency_detect_align": 1.7136518955230713,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 1.0466468334197998,
+          "latency_fusion": 0.04571676254272461,
+          "latency_swap": 0.0,
+          "latency_total": 2.807520627975464,
+          "fps": 0.3561861629921885
+        },
+        "old": {
+          "v4_p_synthetic": 0.7409117221832275,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Angelina_Jolie\\06.jpg",
+      {
+        "new": {
+          "timestamp": 1791554252.4958398,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.7584879994392395,
+          "ema_model_a_similarity": 0.7584879994392395,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999996423721313,
+          "v4_p_synthetic": 0.996184766292572,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            6.262641545617953e-05,
+            9.114679642152623e-07,
+            0.9999364614486694
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 0.8948655128479004,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.11400079727172852,
+          "latency_fusion": 0.11882162094116211,
+          "latency_swap": 0.0,
+          "latency_total": 1.127687931060791,
+          "fps": 0.886770153742199
+        },
+        "old": {
+          "v4_p_synthetic": 0.9992029070854187,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Angelina_Jolie\\07.jpg",
+      {
+        "new": {
+          "timestamp": 1791554257.2822697,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.7983149886131287,
+          "ema_model_a_similarity": 0.7983149886131287,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9230467081069946,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            0.00023452196910511702,
+            3.4299021081096726e-06,
+            0.9997619986534119
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 2.9332056045532227,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.10874032974243164,
+          "latency_fusion": 0.09368300437927246,
+          "latency_swap": 0.0,
+          "latency_total": 3.1356289386749268,
+          "fps": 0.3189152860741827
+        },
+        "old": {
+          "v4_p_synthetic": 0.9951816201210022,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Angelina_Jolie\\08.jpg",
+      {
+        "new": {
+          "timestamp": 1791554262.9139614,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.7135928869247437,
+          "ema_model_a_similarity": 0.7135928869247437,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.999998927116394,
+          "v4_p_synthetic": 0.9975504279136658,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            6.11010764259845e-05,
+            8.891909146768739e-07,
+            0.9999380111694336
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 2.8838632106781006,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.09518265724182129,
+          "latency_fusion": 0.08609938621520996,
+          "latency_swap": 0.0,
+          "latency_total": 3.066145181655884,
+          "fps": 0.3261424168636222
+        },
+        "old": {
+          "v4_p_synthetic": 0.99594646692276,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Angelina_Jolie\\09.jpg",
+      {
+        "new": {
+          "timestamp": 1791554267.643133,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.8157409429550171,
+          "ema_model_a_similarity": 0.8157409429550171,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9973950386047363,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            6.127298547653481e-05,
+            8.916959473026509e-07,
+            0.999937891960144
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 2.0679099559783936,
+          "latency_arcface": 0.0010037422180175781,
+          "latency_visual_branch": 0.01758432388305664,
+          "latency_fusion": 0.061116695404052734,
+          "latency_swap": 0.0,
+          "latency_total": 2.1476147174835205,
+          "fps": 0.46563286787853436
+        },
+        "old": {
+          "v4_p_synthetic": 0.9964626431465149,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ]
+  ],
+  "different": [
+    [
+      "sample_data/lfw/Alejandro_Toledo\\00.jpg",
+      {
+        "new": {
+          "timestamp": 1791554270.1764495,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": -0.06590670347213745,
+          "ema_model_a_similarity": -0.06590670347213745,
+          "model_a_accept": false,
+          "matched_identity": null,
+          "v4_p_identity_match": 0.0,
+          "v4_p_synthetic": 0.0,
+          "v4_predicted_class": -1,
+          "raw_predicted_state": "UNKNOWN",
+          "ema_c_probs": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "final_ui_state": "UNKNOWN",
+          "latency_detect_align": 1.4306800365447998,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.0,
+          "latency_fusion": 0.0,
+          "latency_swap": 0.0,
+          "latency_total": 1.4326770305633545,
+          "fps": 0.6979940200526437
+        },
+        "old": {
+          "v4_p_synthetic": null,
+          "final_ui_state": null,
+          "raw_class": null
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\01.jpg",
+      {
+        "new": {
+          "timestamp": 1791554272.2853858,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.0017437413334846497,
+          "ema_model_a_similarity": 0.0017437413334846497,
+          "model_a_accept": false,
+          "matched_identity": null,
+          "v4_p_identity_match": 0.0,
+          "v4_p_synthetic": 0.0,
+          "v4_predicted_class": -1,
+          "raw_predicted_state": "UNKNOWN",
+          "ema_c_probs": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "final_ui_state": "UNKNOWN",
+          "latency_detect_align": 2.1079366207122803,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.0,
+          "latency_fusion": 0.0,
+          "latency_swap": 0.0,
+          "latency_total": 2.1079366207122803,
+          "fps": 0.47439756498091296
+        },
+        "old": {
+          "v4_p_synthetic": null,
+          "final_ui_state": null,
+          "raw_class": null
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\02.jpg",
+      {
+        "new": {
+          "timestamp": 1791554275.1237943,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": -0.04740026220679283,
+          "ema_model_a_similarity": -0.04740026220679283,
+          "model_a_accept": false,
+          "matched_identity": null,
+          "v4_p_identity_match": 0.0,
+          "v4_p_synthetic": 0.0,
+          "v4_predicted_class": -1,
+          "raw_predicted_state": "UNKNOWN",
+          "ema_c_probs": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "final_ui_state": "UNKNOWN",
+          "latency_detect_align": 2.8354086875915527,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.0,
+          "latency_fusion": 0.0,
+          "latency_swap": 0.0,
+          "latency_total": 2.8354086875915527,
+          "fps": 0.3526828440556899
+        },
+        "old": {
+          "v4_p_synthetic": null,
+          "final_ui_state": null,
+          "raw_class": null
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\03.jpg",
+      {
+        "new": {
+          "timestamp": 1791554276.3607216,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.005847761407494545,
+          "ema_model_a_similarity": 0.005847761407494545,
+          "model_a_accept": false,
+          "matched_identity": null,
+          "v4_p_identity_match": 0.0,
+          "v4_p_synthetic": 0.0,
+          "v4_predicted_class": -1,
+          "raw_predicted_state": "UNKNOWN",
+          "ema_c_probs": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "final_ui_state": "UNKNOWN",
+          "latency_detect_align": 1.232914686203003,
+          "latency_arcface": 0.0010058879852294922,
+          "latency_visual_branch": 0.0,
+          "latency_fusion": 0.0,
+          "latency_swap": 0.0,
+          "latency_total": 1.2339205741882324,
+          "fps": 0.8104249340828737
+        },
+        "old": {
+          "v4_p_synthetic": null,
+          "final_ui_state": null,
+          "raw_class": null
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\04.jpg",
+      {
+        "new": {
+          "timestamp": 1791554278.743968,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "genuine",
+          "face_detected": true,
+          "swap_applied": false,
+          "model_a_similarity": 0.01853804662823677,
+          "ema_model_a_similarity": 0.01853804662823677,
+          "model_a_accept": false,
+          "matched_identity": null,
+          "v4_p_identity_match": 0.0,
+          "v4_p_synthetic": 0.0,
+          "v4_predicted_class": -1,
+          "raw_predicted_state": "UNKNOWN",
+          "ema_c_probs": [
+            0.0,
+            1.0,
+            0.0
+          ],
+          "final_ui_state": "UNKNOWN",
+          "latency_detect_align": 2.37973952293396,
+          "latency_arcface": 0.0010030269622802734,
+          "latency_visual_branch": 0.0,
+          "latency_fusion": 0.0,
+          "latency_swap": 0.0,
+          "latency_total": 2.3807425498962402,
+          "fps": 0.4200370174606166
+        },
+        "old": {
+          "v4_p_synthetic": null,
+          "final_ui_state": null,
+          "raw_class": null
+        }
+      }
+    ]
+  ],
+  "impersonation": [
+    [
+      "sample_data/lfw/Alejandro_Toledo\\00.jpg",
+      {
+        "new": {
+          "timestamp": 1791554282.7905898,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "impersonation",
+          "face_detected": true,
+          "swap_applied": true,
+          "model_a_similarity": 0.8130158185958862,
+          "ema_model_a_similarity": 0.8130158185958862,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9975662231445312,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            6.108390516601503e-05,
+            8.889341529538797e-07,
+            0.9999381303787231
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 0.8852357864379883,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.018032550811767578,
+          "latency_fusion": 0.10653948783874512,
+          "latency_swap": 3.035814046859741,
+          "latency_total": 4.045621871948242,
+          "fps": 0.24718078744181596
+        },
+        "old": {
+          "v4_p_synthetic": 0.9998399019241333,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\01.jpg",
+      {
+        "new": {
+          "timestamp": 1791554292.1660745,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "impersonation",
+          "face_detected": true,
+          "swap_applied": true,
+          "model_a_similarity": 0.8068723678588867,
+          "ema_model_a_similarity": 0.8068723678588867,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9999638795852661,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            5.849602530361153e-05,
+            8.511380542586267e-07,
+            0.9999406337738037
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 1.0210435390472412,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.019037485122680664,
+          "latency_fusion": 0.1243135929107666,
+          "latency_swap": 3.5520308017730713,
+          "latency_total": 4.71642541885376,
+          "fps": 0.21202497891783298
+        },
+        "old": {
+          "v4_p_synthetic": 0.9998111128807068,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\02.jpg",
+      {
+        "new": {
+          "timestamp": 1791554305.5875611,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "impersonation",
+          "face_detected": true,
+          "swap_applied": true,
+          "model_a_similarity": 0.8185003399848938,
+          "ema_model_a_similarity": 0.8185003399848938,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9999997615814209,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            5.845816485816613e-05,
+            8.505847404194355e-07,
+            0.9999407529830933
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 2.3980746269226074,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.01904773712158203,
+          "latency_fusion": 0.08873867988586426,
+          "latency_swap": 4.817564010620117,
+          "latency_total": 7.323425054550171,
+          "fps": 0.13654813049239614
+        },
+        "old": {
+          "v4_p_synthetic": 0.9999985694885254,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\03.jpg",
+      {
+        "new": {
+          "timestamp": 1791554316.1689916,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "impersonation",
+          "face_detected": true,
+          "swap_applied": true,
+          "model_a_similarity": 0.7761282324790955,
+          "ema_model_a_similarity": 0.7761282324790955,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999997615814209,
+          "v4_p_synthetic": 1.0,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            5.845788473379798e-05,
+            8.505807045366964e-07,
+            0.9999407529830933
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 1.1844487190246582,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.1109769344329834,
+          "latency_fusion": 0.11386847496032715,
+          "latency_swap": 2.8218729496002197,
+          "latency_total": 4.2311670780181885,
+          "fps": 0.23634141161553568
+        },
+        "old": {
+          "v4_p_synthetic": 0.9999974966049194,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ],
+    [
+      "sample_data/lfw/Alejandro_Toledo\\04.jpg",
+      {
+        "new": {
+          "timestamp": 1791554325.5458908,
+          "session_id": null,
+          "frame_id": 0,
+          "condition": "impersonation",
+          "face_detected": true,
+          "swap_applied": true,
+          "model_a_similarity": 0.8252253532409668,
+          "ema_model_a_similarity": 0.8252253532409668,
+          "model_a_accept": true,
+          "matched_identity": "Alice",
+          "v4_p_identity_match": 0.9999998807907104,
+          "v4_p_synthetic": 0.9999923706054688,
+          "v4_predicted_class": 2,
+          "raw_predicted_state": "SUSPECTED_IMPERSONATION",
+          "ema_c_probs": [
+            5.846597196068615e-05,
+            8.506991093781835e-07,
+            0.9999407529830933
+          ],
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "latency_detect_align": 1.0238456726074219,
+          "latency_arcface": 0.0,
+          "latency_visual_branch": 0.018138885498046875,
+          "latency_fusion": 0.12088871002197266,
+          "latency_swap": 3.4535083770751953,
+          "latency_total": 4.616381645202637,
+          "fps": 0.2166198717645462
+        },
+        "old": {
+          "v4_p_synthetic": 0.999869704246521,
+          "final_ui_state": "SUSPECTED_IMPERSONATION",
+          "raw_class": 2
+        }
+      }
+    ]
+  ]
+}

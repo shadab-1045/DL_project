@@ -1,0 +1,50 @@
+{
+    "per_class_probabilities": {
+        "genuine": {
+            "mean_p_synthetic": 0.02094723066478519,
+            "mean_p_id_match": 0.8226938115932299
+        },
+        "different_person": {
+            "mean_p_synthetic": 0.025728231656184007,
+            "mean_p_id_match": 0.12171499083439509
+        },
+        "impersonation": {
+            "mean_p_synthetic": 0.6624224058796244,
+            "mean_p_id_match": 0.8185419166644957
+        }
+    },
+    "late_fusion": {
+        "accuracy": 0.8094405594405595,
+        "genuine_recall": 0.805699481865285,
+        "different_recall": 0.9888888888888889,
+        "impersonation_recall": 0.65625,
+        "impersonation_precision": 0.9692307692307692
+    },
+    "confusion_matrix": [
+        [
+            311,
+            74,
+            1
+        ],
+        [
+            0,
+            89,
+            1
+        ],
+        [
+            25,
+            8,
+            63
+        ]
+    ],
+    "ablation_neutralize_visual": {
+        "genuine_recall": 0.8082901554404145,
+        "different_recall": 0.9777777777777777,
+        "impersonation_recall": 0.0
+    },
+    "ablation_neutralize_identity": {
+        "genuine_recall": 0.9974093264248705,
+        "different_recall": 0.0,
+        "impersonation_recall": 0.6770833333333334
+    }
+}

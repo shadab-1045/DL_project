@@ -1,0 +1,12 @@
+{
+    "checkpoint_path": "experiments/model_c_control/best_model.pt",
+    "selected_epoch": 5,
+    "random_seed": 42,
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "sampler": "WeightedRandomSampler",
+    "loss_function": "CrossEntropyLoss",
+    "architecture_identifier": "EfficientNet-B0 + ArcFace + Cosine Similarity",
+    "training_manifest_hash": "7332a93ff12ed712ce40443d9598c4e2",
+    "validation_manifest_hash": "bcbc0e845f522c6c8f07aff9ea4e422b"
+}

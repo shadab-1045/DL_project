@@ -1,0 +1,283 @@
+sample_id,ground_truth,model_a_result,model_c_result,final_state,reference_identity,physical_identity,attack_type,notes
+P_aad76185,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_932d2a24,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_b81dfce7,genuine,REJECT,0,UNKNOWN,n000383,n000383,FaceSwap,Identity false rejection
+P_261c2072,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_96bf8d2e,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_7e69cf74,genuine,REJECT,0,UNKNOWN,n000383,n000383,FaceSwap,Identity false rejection
+P_9e81b42b,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_929d68ff,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_51b6c6e4,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_1269c89b,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_77fbb392,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_3efac081,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_e128676d,genuine,MATCH,1,UNKNOWN,n000383,n000383,FaceSwap,Genuine confused with different_person
+P_c7c11c70,impersonation,REJECT,2,UNKNOWN,n000383,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_faf1cf79,impersonation,REJECT,2,UNKNOWN,n000383,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_85010b70,impersonation,REJECT,2,UNKNOWN,n000383,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_6587edb2,impersonation,REJECT,2,UNKNOWN,n000383,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_42b4d749,impersonation,REJECT,2,UNKNOWN,n000383,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_e4917359,impersonation,REJECT,2,UNKNOWN,n000383,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_c4d96156,impersonation,REJECT,2,UNKNOWN,n000383,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_dbe621ce,impersonation,REJECT,2,UNKNOWN,n000383,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_5d5aec3f,impersonation,REJECT,1,UNKNOWN,n000383,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_23573c51,impersonation,REJECT,2,UNKNOWN,n000383,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_3cd479cc,genuine,MATCH,1,UNKNOWN,n001041,n001041,FaceSwap,Genuine confused with different_person
+P_603c5e5b,genuine,MATCH,1,UNKNOWN,n001041,n001041,FaceSwap,Genuine confused with different_person
+P_a95ceeec,genuine,MATCH,1,UNKNOWN,n001041,n001041,FaceSwap,Genuine confused with different_person
+P_c1c4c66a,genuine,MATCH,1,UNKNOWN,n001041,n001041,FaceSwap,Genuine confused with different_person
+P_78b5713c,impersonation,REJECT,2,UNKNOWN,n001041,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_132fcc47,impersonation,REJECT,2,UNKNOWN,n001041,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_04a1ed62,impersonation,REJECT,2,UNKNOWN,n001041,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_aa04432d,impersonation,REJECT,2,UNKNOWN,n001041,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_316b1199,impersonation,REJECT,2,UNKNOWN,n001041,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_8d4b7ee8,impersonation,REJECT,2,UNKNOWN,n001041,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_2e54ad66,impersonation,REJECT,2,UNKNOWN,n001041,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_684708ae,impersonation,REJECT,2,UNKNOWN,n001041,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_5bbe0101,impersonation,REJECT,2,UNKNOWN,n001041,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_cc80e0a9,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_9b72b7ae,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_ea4e398b,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_55fde068,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_ed21a7ed,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_3dd98fa3,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_c84dc633,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_053e1800,genuine,MATCH,1,UNKNOWN,n001052,n001052,FaceSwap,Genuine confused with different_person
+P_771418fe,impersonation,REJECT,2,UNKNOWN,n001052,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_46a99f09,impersonation,REJECT,2,UNKNOWN,n001052,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_72515640,impersonation,REJECT,2,UNKNOWN,n001052,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_4dc5b418,impersonation,REJECT,2,UNKNOWN,n001052,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_61dc5a87,impersonation,REJECT,2,UNKNOWN,n001052,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_0973132c,impersonation,REJECT,2,UNKNOWN,n001052,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_5a66d0d0,impersonation,REJECT,2,UNKNOWN,n001052,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_043b7edb,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_3d42d6fc,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_eed69dcd,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_78dba56e,genuine,MATCH,1,UNKNOWN,n001098,n001098,FaceSwap,Genuine confused with different_person
+P_356926b6,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_b219fe68,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_cb20b64b,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_93efcbfb,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_24a51d49,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_a9405ac2,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_86d474b9,genuine,MATCH,1,UNKNOWN,n001098,n001098,FaceSwap,Genuine confused with different_person
+P_1debd5d4,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_db8e7189,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_9d0d1092,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_bf589d69,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_7c50e94a,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_112a4fa0,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_29358305,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_84acaf56,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_fc99410b,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_c0daeb27,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_ac6afa31,genuine,MATCH,1,UNKNOWN,n001098,n001098,FaceSwap,Genuine confused with different_person
+P_d37d5d4e,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_73f88465,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_ab8286a1,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_2208b6d2,genuine,REJECT,1,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_990a3444,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_f7eafe24,genuine,REJECT,0,UNKNOWN,n001098,n001098,FaceSwap,Identity false rejection
+P_957b79e4,impersonation,REJECT,2,UNKNOWN,n001098,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_a67d45af,impersonation,REJECT,2,UNKNOWN,n001098,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_1d884e99,impersonation,REJECT,2,UNKNOWN,n001098,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_b5227354,impersonation,REJECT,2,UNKNOWN,n001098,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_b4071244,impersonation,REJECT,2,UNKNOWN,n001098,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_9066cd91,impersonation,REJECT,2,UNKNOWN,n001098,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_5b2fbb4a,impersonation,REJECT,2,UNKNOWN,n001098,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_91947160,impersonation,REJECT,2,UNKNOWN,n001098,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_718f11ef,impersonation,REJECT,2,UNKNOWN,n001098,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_b044b5ea,impersonation,REJECT,2,UNKNOWN,n001098,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_1f45871f,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_2dbe2c8e,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_81b38982,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_b218b9f4,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_f9ddcd37,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_27d0ed27,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_224086f3,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_806196ac,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_85d0a6bf,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_37d306bc,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_39498b00,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_c9083d64,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_eacfd810,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_4533e255,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_dc956a9d,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_26759110,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_63251758,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_9e6e4387,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_80816f37,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_75a5cc3f,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_cf0cd607,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_f12c42ff,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_40ce363d,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_39a12502,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_fefc4ae3,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_9b809fcf,genuine,MATCH,1,UNKNOWN,n001165,n001165,FaceSwap,Genuine confused with different_person
+P_d81592a7,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_060d91ab,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_11265354,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_7eeaaa2a,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_8cb8fb12,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_118f071b,genuine,REJECT,0,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_e1418784,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_1fda4825,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_d81b45ff,genuine,REJECT,1,UNKNOWN,n001165,n001165,FaceSwap,Identity false rejection
+P_1a2c778b,impersonation,REJECT,0,UNKNOWN,n001165,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_d03f1fad,impersonation,REJECT,2,UNKNOWN,n001165,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_d4bdef2b,impersonation,REJECT,2,UNKNOWN,n001165,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_504c0a20,impersonation,REJECT,2,UNKNOWN,n001165,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_22ab56be,impersonation,REJECT,2,UNKNOWN,n001165,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_a27ab270,impersonation,REJECT,2,UNKNOWN,n001165,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_32c6a81c,impersonation,REJECT,2,UNKNOWN,n001165,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_74f6f7e4,impersonation,REJECT,2,UNKNOWN,n001165,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_a39a9729,impersonation,REJECT,2,UNKNOWN,n001165,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_590d41d1,impersonation,REJECT,2,UNKNOWN,n001165,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_66a7087f,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_bfdf9556,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_b4e070c2,genuine,REJECT,1,UNKNOWN,n001742,n001742,FaceSwap,Identity false rejection
+P_167b1d63,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_36e79157,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_ff107844,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_ac862118,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_4991e8dc,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_03ccba71,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_6d11da65,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_74425305,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_cfd8d25f,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_df967d59,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_b1285021,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_f09d08b4,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_9001212a,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_7f09b851,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_1f3218a9,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_0bd01f6a,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_9862379a,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_bd466b87,genuine,MATCH,1,UNKNOWN,n001742,n001742,FaceSwap,Genuine confused with different_person
+P_be500928,impersonation,REJECT,2,UNKNOWN,n001742,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_4d5f9f12,impersonation,REJECT,2,UNKNOWN,n001742,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_568e50cb,impersonation,REJECT,2,UNKNOWN,n001742,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_f5ebae11,impersonation,REJECT,2,UNKNOWN,n001742,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_caf91c4c,impersonation,REJECT,2,UNKNOWN,n001742,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_7cb14ebc,impersonation,REJECT,2,UNKNOWN,n001742,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_f601382d,impersonation,REJECT,2,UNKNOWN,n001742,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_6220e550,impersonation,REJECT,2,UNKNOWN,n001742,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_1f7231cc,impersonation,REJECT,2,UNKNOWN,n001742,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_a7307e3c,impersonation,REJECT,2,UNKNOWN,n001742,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_222c266b,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_1923a4d5,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_fb279428,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_a1f813e9,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_1233cff6,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_f01376e2,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_2156b520,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_fef0bd5d,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_68cf9ac4,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_e3745895,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_5d8b3f56,genuine,MATCH,1,UNKNOWN,n001841,n001841,FaceSwap,Genuine confused with different_person
+P_58afb011,impersonation,REJECT,2,UNKNOWN,n001841,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_ba1c3f99,impersonation,REJECT,2,UNKNOWN,n001841,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_65250e8f,impersonation,REJECT,2,UNKNOWN,n001841,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_7da87314,impersonation,REJECT,2,UNKNOWN,n001841,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_3980239d,impersonation,REJECT,2,UNKNOWN,n001841,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_70eb5a34,impersonation,REJECT,2,UNKNOWN,n001841,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_516713fb,impersonation,REJECT,2,UNKNOWN,n001841,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_640fdf78,impersonation,REJECT,2,UNKNOWN,n001841,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_4f9b2d16,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_5952c966,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_8dc56884,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_e9e4d39e,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_3b793c5e,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_b06270c7,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_b756118c,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_f0b8738d,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_5d9f689b,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_0500d7a6,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_df136610,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_2c2e2e96,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_80c43689,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_c4d693ce,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_e308df38,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_e0441cc8,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_75581f2c,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_8d8da0a5,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_7813eeaf,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_4ccace62,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_3f5732b7,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_be3de896,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_ec6b8d98,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_5e789d0f,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_c3c1938e,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_ec42a6d7,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_77207559,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_922bc3e9,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_e8fe4ccf,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_4c1c523c,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_241ae9a8,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_9e9effbd,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_c29f10ef,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_5cb2f04f,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_aba5d58f,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_02e99aa3,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_c1dedc20,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_e5834fcc,genuine,REJECT,0,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_b08b4545,genuine,REJECT,1,UNKNOWN,n002363,n002363,FaceSwap,Identity false rejection
+P_54b67e2e,impersonation,REJECT,2,UNKNOWN,n002363,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_419d8dd0,impersonation,REJECT,2,UNKNOWN,n002363,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_d6ae8763,impersonation,REJECT,2,UNKNOWN,n002363,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_54697d9b,impersonation,REJECT,2,UNKNOWN,n002363,n001165,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_cd14b970,impersonation,REJECT,2,UNKNOWN,n002363,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_57a545bd,impersonation,REJECT,2,UNKNOWN,n002363,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_a309efda,impersonation,REJECT,2,UNKNOWN,n002363,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_ff4d90d3,impersonation,REJECT,2,UNKNOWN,n002363,n001052,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_e408ce4c,impersonation,REJECT,2,UNKNOWN,n002363,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_bad89275,impersonation,REJECT,2,UNKNOWN,n002363,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_d2021528,genuine,REJECT,1,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_c928e20e,genuine,REJECT,0,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_b9a98676,genuine,REJECT,0,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_6835fd56,genuine,REJECT,0,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_45cc0b72,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_9a6dc4f3,genuine,REJECT,1,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_356876c6,genuine,REJECT,1,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_f9574093,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_a2a5ab0d,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_00d12490,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_007c60c2,genuine,REJECT,1,UNKNOWN,n005210,n005210,FaceSwap,Identity false rejection
+P_edc61879,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_6d4f5d45,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_97a7cd2c,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_59a57684,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_f685e3d2,genuine,MATCH,1,UNKNOWN,n005210,n005210,FaceSwap,Genuine confused with different_person
+P_c7f47c9c,impersonation,REJECT,1,UNKNOWN,n005210,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_3e8160a9,impersonation,REJECT,2,UNKNOWN,n005210,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_05376e3a,impersonation,REJECT,2,UNKNOWN,n005210,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_0fe70d6a,impersonation,REJECT,2,UNKNOWN,n005210,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_96471b50,impersonation,REJECT,2,UNKNOWN,n005210,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_9b28f058,impersonation,REJECT,2,UNKNOWN,n005210,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_9d94f407,impersonation,REJECT,2,UNKNOWN,n005210,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_52347226,impersonation,REJECT,2,UNKNOWN,n005210,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_58045861,impersonation,REJECT,2,UNKNOWN,n005210,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_46b7e665,impersonation,REJECT,2,UNKNOWN,n005210,n006685,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_4af71f2f,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_c21267d2,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_bbe5fa04,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_2488e4e5,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_2171409d,genuine,REJECT,1,UNKNOWN,n006685,n006685,FaceSwap,Identity false rejection
+P_876b6ad9,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_87830580,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_5d72e9af,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_5e9c1d04,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_da78e32a,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_25ba276b,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_30a8fa05,genuine,REJECT,0,UNKNOWN,n006685,n006685,FaceSwap,Identity false rejection
+P_358b89ac,genuine,MATCH,1,UNKNOWN,n006685,n006685,FaceSwap,Genuine confused with different_person
+P_c8b9f1cb,impersonation,REJECT,2,UNKNOWN,n006685,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_5b92a682,impersonation,REJECT,2,UNKNOWN,n006685,n001098,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_ab141fdb,impersonation,REJECT,2,UNKNOWN,n006685,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_7f3a0f8c,impersonation,REJECT,2,UNKNOWN,n006685,n001041,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_b1ea25fd,impersonation,REJECT,2,UNKNOWN,n006685,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_9956714b,impersonation,REJECT,2,UNKNOWN,n006685,n001742,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_ffa29a7d,impersonation,REJECT,2,UNKNOWN,n006685,n001841,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_e602ed19,impersonation,REJECT,2,UNKNOWN,n006685,n000383,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_4ad2f8ce,impersonation,REJECT,2,UNKNOWN,n006685,n002363,FaceSwap,Impersonation missed by Model A (Failed identity match)
+P_b7ae086a,impersonation,REJECT,2,UNKNOWN,n006685,n005210,FaceSwap,Impersonation missed by Model A (Failed identity match)

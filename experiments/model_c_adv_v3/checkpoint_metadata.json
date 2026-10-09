@@ -1,0 +1,8 @@
+{
+    "checkpoint_path": "experiments/model_c_adv_v3/best_model.pt",
+    "selected_epoch": 7,
+    "architecture_identifier": "Model C V3 (EfficientNet-B0 + Explicit Pretrained ArcFace Probes)",
+    "epsilon": 0.05,
+    "alpha": 0.5,
+    "batch_size": 32
+}

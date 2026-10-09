@@ -1,0 +1,5 @@
+metric,epsilon,difference_c_adv_minus_control,ci_lower,ci_upper,p_value,bootstrap_iterations,test_method
+impersonation_recall,0.05,-0.04,-0.1376317587351162,0.0515463917525772,0.512,1000,paired_randomization
+impersonation_f1,0.05,0.230854818907305,0.1589857065973463,0.3060325747251541,< 0.001,1000,paired_randomization
+impersonation_recall,0.1,0.59,0.4954128440366973,0.6923076923076923,< 0.001,1000,paired_randomization
+impersonation_f1,0.1,0.6941176470588235,0.614429718875502,0.767464853501511,< 0.001,1000,paired_randomization

@@ -1,0 +1,6 @@
+sample_id,split,source_identity,target_identity,visually_verified_source_identity,visually_verified_target_context,direction_correct,notes
+SW_61fae7ff,train,n000115,n001417,Yes,Yes,Yes,"Sim to Source: 0.47, Sim to Target: 0.11"
+SW_1fdac72c,train,n000115,n000742,No,Yes,No,"Sim to Source: -0.00, Sim to Target: 0.04"
+SW_5e20059f,train,n000115,n003998,No,Yes,Yes,"Sim to Source: 0.29, Sim to Target: 0.01"
+SW_2d706a5e,train,n000115,n003268,No,Yes,Yes,"Sim to Source: 0.38, Sim to Target: 0.01"
+SW_6afb2fe7,train,n000115,n002590,No,Yes,Yes,"Sim to Source: 0.27, Sim to Target: 0.08"

@@ -1,0 +1,9 @@
+identity:
+  model_name: "buffalo_l"
+  det_thresh: 0.5
+  match_threshold: null  # Must be calibrated before use
+  match_threshold_status: "not_calibrated"
+  device: "cuda"
+
+paths:
+  gallery_dir: "gallery"

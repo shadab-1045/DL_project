@@ -1,0 +1,7 @@
+batch_size: 32
+epochs: 10
+experiment_dir: experiments/model_c_control
+learning_rate: 0.0001
+test_csv: data/manifests/test_pairs.csv
+train_csv: data/manifests/train_pairs.csv
+val_csv: data/manifests/val_pairs.csv

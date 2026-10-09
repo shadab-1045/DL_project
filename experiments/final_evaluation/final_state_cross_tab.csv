@@ -1,0 +1,4 @@
+ground_truth_category,VERIFIED,UNKNOWN,SUSPECTED_IMPERSONATION
+genuine,199,188,0
+different_person,0,90,0
+impersonation,0,94,6

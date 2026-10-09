@@ -1,0 +1,11 @@
+sample_id,split,source_identity,target_identity,source_face_visible,target_context_visible,generated_face_visible,generated_resembles_source,target_context_retained,swap_quality_acceptable,human_direction_correct,notes
+SW_61fae7ff,train,n000115,n001417,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean gender-matched swap
+SW_1fdac72c,train,n000115,n000742,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Cross-gender swap; slight blending artifacts on forehead but direction is correct
+SW_5e20059f,train,n000115,n003998,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean cross-gender swap onto older male
+SW_2d706a5e,train,n000115,n003268,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap
+SW_e7df4ded,val,n000489,n008477,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap; glasses removed
+SW_240982e0,val,n000489,n008477,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap; sunglasses ghostly artifact but face clearly swapped
+SW_27ca212f,val,n000489,n009056,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap
+SW_df366c81,test,n000383,n001841,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Very clean cross-gender swap retaining folder occlusion
+SW_a1dde1af,test,n000383,n001165,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap
+SW_28ae05bb,test,n000383,n001052,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,Clean swap

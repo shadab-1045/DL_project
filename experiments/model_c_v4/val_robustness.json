@@ -1,0 +1,37 @@
+{
+    "branch_diagnostics": {
+        "visual_binary_accuracy": 0.9370629370629371,
+        "identity_binary_accuracy": 0.8426573426573427
+    },
+    "per_class_probabilities": {
+        "genuine": {
+            "mean_p_synthetic": 0.02094723066478519,
+            "mean_p_id_match": 0.6575568642640979
+        },
+        "different_person": {
+            "mean_p_synthetic": 0.025728231656184007,
+            "mean_p_id_match": 0.6834540314144558
+        },
+        "impersonation": {
+            "mean_p_synthetic": 0.6624224058796244,
+            "mean_p_id_match": 0.659908002242446
+        }
+    },
+    "late_fusion": {
+        "accuracy": 0.7884615384615384,
+        "genuine_recall": 0.9870466321243523,
+        "different_recall": 0.0,
+        "impersonation_recall": 0.7291666666666666,
+        "impersonation_precision": 0.9210526315789473
+    },
+    "ablation_neutralize_visual": {
+        "genuine_recall": 1.0,
+        "different_recall": 0.0,
+        "impersonation_recall": 0.0
+    },
+    "ablation_neutralize_identity": {
+        "genuine_recall": 0.9870466321243523,
+        "different_recall": 0.0,
+        "impersonation_recall": 0.7291666666666666
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "accuracy": 0.7989601386481803,
+    "TAR": 0.7157622739018088,
+    "FRR": 0.2842377260981912,
+    "FAR": 0.031578947368421054,
+    "IMPERSONATION_ACCEPTANCE_RATE": 0.06,
+    "impersonation_rejection_rate": 0.94,
+    "different_person_false_acceptance_rate": 0.0,
+    "support": {
+        "genuine": 387,
+        "different_person": 90,
+        "impersonation": 100
+    }
+}

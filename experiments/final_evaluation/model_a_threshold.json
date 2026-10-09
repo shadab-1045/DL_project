@@ -1,0 +1,7 @@
+{
+    "selected_threshold": 0.24452903866767883,
+    "calibration_method": "max_balanced_accuracy",
+    "validation_sample_count": 572,
+    "validation_genuine_count": 386,
+    "validation_impostor_count": 186
+}

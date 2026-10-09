@@ -1,0 +1,16 @@
+{
+    "checkpoint_path": "experiments/model_c_adv_v2/best_model.pt",
+    "selected_epoch": 10,
+    "random_seed": 42,
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "sampler": "WeightedRandomSampler",
+    "loss_function": "alpha*Clean + (1-alpha)*Adversarial",
+    "architecture_identifier": "EfficientNet-B0 + ArcFace + Cosine Similarity",
+    "training_manifest_hash": "2977cea79af4f626990fc60918968325",
+    "validation_manifest_hash": "e3969a680397d6043b0136e36ee02cff",
+    "epsilon": 0.05,
+    "alpha": 0.5,
+    "batch_size": 32,
+    "checkpoint_sha256": "68c5205efd86d30a09550af2e88fa4854e018924b3bdefae3735a244e49f3379"
+}

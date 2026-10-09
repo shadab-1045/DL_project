@@ -1,0 +1,14 @@
+{
+    "genuine_to_verified_rate": 0.5142118863049095,
+    "genuine_to_unknown_rate": 0.48578811369509045,
+    "genuine_to_suspected_impersonation_rate": 0.0,
+    "different_person_to_verified_rate": 0.0,
+    "different_person_to_unknown_rate": 1.0,
+    "different_person_to_suspected_impersonation_rate": 0.0,
+    "impersonation_to_verified_rate": 0.0,
+    "impersonation_to_unknown_rate": 0.94,
+    "impersonation_to_suspected_impersonation_rate": 0.06,
+    "final_verified_impersonation_rate": 0.0,
+    "suspected_impersonation_detection_rate": 0.06,
+    "safe_rejection_or_unknown_rate": 1.0
+}

@@ -1,0 +1,3 @@
+model,genuine_acceptance_rate,different_person_far,impersonation_acceptance_rate
+Model A Only,0.7157622739018088,0.0,0.06
+Model A + C-Control,0.5142118863049095,0.0,0.0

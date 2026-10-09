@@ -1,0 +1,4 @@
+True \ Predicted,Predicted Genuine (0),Predicted Different (1),Predicted Impersonation (2)
+True Genuine (0),259,127,0
+True Different (1),59,31,0
+True Impersonation (2),1,1,94

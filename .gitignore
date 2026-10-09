@@ -1,0 +1,28 @@
+venv/
+node_modules/
+frontend/node_modules/
+.pytest_cache/
+__pycache__/
+*.pyc
+.env
+.DS_Store
+
+# Ignore huge models and data
+model/
+models/
+data/
+sample_data/
+temp_eval/
+gallery/
+
+# Ignore experiment checkpoints and artifacts
+experiments/**/*.pt
+experiments/**/*.pth
+experiments/**/*.onnx
+experiments/live_demo/v4_gallery/
+experiments/live_demo/v4_gallery_physical/
+experiments/live_demo/temp_enrollment/
+
+# Frontend builds
+frontend/dist/
+frontend/.nx/
