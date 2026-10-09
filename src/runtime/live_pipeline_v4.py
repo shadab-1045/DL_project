@@ -189,27 +189,28 @@ class LiveInferencePipelineV4:
             "condition": condition,
             "face_detected": True,
             "swap_applied": swap_applied,
-            "model_a_similarity": float(similarity),
+            "raw_model_a_similarity": float(similarity),
             "ema_model_a_similarity": float(self.ema_similarity),
-            "model_a_accept": bool(raw_accepted),
+            "model_a_threshold": float(self.identity_pipeline.match_threshold),
+            "model_a_raw_accept": bool(raw_accepted),
             "matched_identity": matched_identity,
-            "v4_p_identity_match": p_id_val,
-            "v4_p_synthetic": p_synth_val,
-            "v4_predicted_class": raw_class,
-            "raw_predicted_state": raw_final_state,
+            "raw_c_class": raw_class,
+            "raw_c_probs": [p_id_val, p_synth_val, 0.0],
+            "smoothed_class": smoothed_class,
             "ema_c_probs": self.ema_probs.tolist(),
-            "final_ui_state": final_state,
-            "latency_detect_align": float(detect_latency),
-            "latency_arcface": float(model_a_latency),
-            "latency_visual_branch": float(visual_latency),
-            "latency_fusion": float(fusion_latency),
-            "latency_swap": float(swap_latency),
-            "latency_total": float(total_latency),
-            "fps": float(fps)
+            "raw_predicted_state": raw_final_state,
+            "final_state": final_state,
+            "swap_latency": float(swap_latency),
+            "model_a_latency": float(model_a_latency),
+            "model_c_latency": float(visual_latency + fusion_latency),
+            "total_latency": float(total_latency),
+            "fps": float(fps),
+            "status": "success",
+            "error": None
         }
         
         if self.log_file:
-            self.log_file.write(json.dumps(log_record) + "\n")
+            self.log_file.write(json.dumps(log_record) + "\\n")
             self.log_file.flush()
             
         return log_record
@@ -223,15 +224,26 @@ class LiveInferencePipelineV4:
             "condition": condition,
             "face_detected": False,
             "swap_applied": swap_applied,
-            "status": status,
-            "model_a_accept": False,
+            "raw_model_a_similarity": None,
+            "ema_model_a_similarity": None,
+            "model_a_threshold": float(self.identity_pipeline.match_threshold),
+            "model_a_raw_accept": False,
+            "matched_identity": None,
+            "raw_c_class": None,
+            "raw_c_probs": None,
+            "smoothed_class": None,
+            "ema_c_probs": None,
             "raw_predicted_state": "UNKNOWN",
-            "final_ui_state": "UNKNOWN",
-            "latency_detect_align": float(detect_latency),
-            "latency_swap": float(swap_latency),
-            "latency_total": time.time() - start_time
+            "final_state": "UNKNOWN",
+            "swap_latency": float(swap_latency),
+            "model_a_latency": None,
+            "model_c_latency": None,
+            "total_latency": time.time() - start_time,
+            "fps": 0.0,
+            "status": status,
+            "error": status
         }
         if self.log_file:
-            self.log_file.write(json.dumps(log_record) + "\n")
+            self.log_file.write(json.dumps(log_record) + "\\n")
             self.log_file.flush()
         return log_record

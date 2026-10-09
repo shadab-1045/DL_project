@@ -61,12 +61,22 @@ async def test_integration():
             response = await ws.recv()
             data = json.loads(response)
             
-            print("\n--- INFERENCE RESULT ---")
+            print("\\n--- INFERENCE RESULT ---")
             print(f"Face Detected: {data.get('face_detected')}")
-            print(f"Model A Similarity: {data.get('model_a_similarity')}")
-            print(f"Model A Accept: {data.get('model_a_accept')}")
-            print(f"Final UI State: {data.get('final_ui_state')}")
+            print(f"Similarity: {data.get('raw_model_a_similarity')}")
+            print(f"Threshold: {data.get('model_a_threshold')}")
+            print(f"Accepted: {data.get('model_a_raw_accept')}")
+            print(f"Class: {data.get('smoothed_class')}")
+            print(f"Probs: {data.get('ema_c_probs')}")
+            print(f"Latency: {data.get('total_latency')}")
+            print(f"Final State: {data.get('final_state')}")
+            print(f"Status: {data.get('status')}")
+            print(f"Error: {data.get('error')}")
             print("------------------------")
+            
+            # Print full payload sanitized for output
+            del data['processed_frame_b64']
+            print("\\nFULL PAYLOAD:", json.dumps(data, indent=2))
             
     except Exception as e:
         print("WebSocket Test Failed:", e)
