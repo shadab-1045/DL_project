@@ -1,4 +1,4 @@
-"""Inference-side swap detector (adversarially trained MobileNetV2). Input: BGR frame + ArcFace face bbox."""
+"""Inference-side swap detector (MobileNetV2; the deployed checkpoint is standard-trained, see docs/evaluation.md). Input: BGR frame + ArcFace face bbox."""
 import os
 import numpy as np, cv2, torch, torch.nn as nn
 from torchvision.models import mobilenet_v2, MobileNet_V2_Weights

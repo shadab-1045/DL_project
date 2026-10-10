@@ -17,6 +17,12 @@ os.chdir(DL_PROJECT_DIR)
 
 # Provide FaceGuard with its model path relative to the new CWD or absolutely
 os.environ["MODEL_PATH"] = os.path.join(FACEGUARD_DIR, "models", "faceguard_phase2_finetuned.h5")
+# The verdict does not use Model C, so skip loading it. Set DL_LOAD_MODEL_C=1 to load it anyway.
+os.environ.setdefault("DL_LOAD_MODEL_C", "0")
+# The verdict does not use Model C, so skip loading it. Set DL_LOAD_MODEL_C=1 to load it anyway.
+os.environ.setdefault("DL_LOAD_MODEL_C", "0")
+# The verdict does not use Model C, so skip loading it. Set DL_LOAD_MODEL_C=1 to load it anyway.
+os.environ.setdefault("DL_LOAD_MODEL_C", "0")
 
 # Force TensorFlow to use CPU to prevent cuDNN DLL missing errors on Windows
 # and to prevent it from stealing VRAM from PyTorch (RTX 4060 has 8GB VRAM)
@@ -59,7 +65,7 @@ async def unified_lifespan(app: FastAPI):
     print("1/3 Initializing FaceGuard models (used by the /faceguard video/image forensics endpoints)...")
     await fg_main.startup_event()
     
-    print("2/3 Loading adversarially-trained swap detector...")
+    print("2/3 Loading swap detector...")
     global swap_detector
     swap_detector = SwapDetector()
     print("3/3 Initializing identity pipeline...")
@@ -119,7 +125,7 @@ app.mount("/dl", dl_app)
 async def unified_verify_ws(websocket: WebSocket, condition: str = "genuine"):
     """
     Per frame: ArcFace identity (+ optional InSwapper attack when condition=impersonation), then the
-    adversarially-trained swap detector, which can veto an identity match.
+    swap detector, which can veto an identity match.
     """
     await websocket.accept()
     
