@@ -70,7 +70,7 @@ Open the **Unified Checkpoint** tab. More detail: [Getting started](docs/getting
 | Job | Gates |
 |---|---|
 | `python` | syntax / undefined names (ruff), compile, `test_decide.py` |
-| `frontend` | FaceGuard UI `npm ci` and production build (warnings are errors); `npm audit` is reported but non-blocking |
+| `frontend` | FaceGuard UI `npm ci --legacy-peer-deps` and production build (compile errors fail; lint warnings are reported); `npm audit` is reported but non-blocking |
 
 It does **not** run the models, the API or the evaluation scripts: those need GPU weights and datasets that are not in git.
 Model quality is therefore not gated by CI; the numbers in `eval_results/` are from local runs.
