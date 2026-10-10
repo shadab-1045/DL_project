@@ -71,7 +71,6 @@ class LiveInferencePipelineV4:
 
     def process_frame(self, frame_bgr, condition="genuine", frame_id=0):
         start_time = time.time()
-        self.last_face_bbox = None  # bbox of the scored face, read by unified-swap-defense; None when no face is found
         
         # Step 1: Optional Swap (native InSwapper-based live face-swap presentation attack)
         swap_start = time.time()
@@ -96,7 +95,6 @@ class LiveInferencePipelineV4:
             
         model_a_start = time.time()
         best_face = max(faces, key=lambda f: (f.bbox[2] - f.bbox[0]) * (f.bbox[3] - f.bbox[1]))
-        self.last_face_bbox = best_face.bbox
         emb = best_face.normed_embedding
         
         id_res = self.identity_pipeline.gallery.identify(

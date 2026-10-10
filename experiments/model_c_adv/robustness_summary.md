@@ -1,11 +1,3 @@
-> **Correction note (added during review).** Read the claims below with these caveats:
-> 1. This evaluates the Phase 4 "Model C" (ArcFace + visual branch), not the `ModelCV4` fusion model used by the live pipeline.
-> 2. Overall accuracy under attack is 6.5% (epsilon 0.01), 21.2% (0.05) and 29.4% (0.10) for C-Adv, so the model is *not* robust.
->    The sections below highlight impersonation F1 / recall, which can stay high for a classifier that over-predicts "impersonation" under noise.
-> 3. Wording such as "massive research success" or "dramatically improves" is not supported by these numbers. A 99% clean impersonation F1 also
->    suggests the swap class is separable by data artifacts in that dataset.
-> 4. Only FGSM was used. A logit-margin PGD with restarts is a stronger check; see `unified-swap-defense/eval_results/margin_attack_results.json`.
-
 # Adversarial Robustness Summary: C-Control vs C-Adv
 
 ## Attack Method

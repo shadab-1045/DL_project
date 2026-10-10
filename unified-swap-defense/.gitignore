@@ -1,3 +1,0 @@
-# The repository root .gitignore ignores every `models/` directory; keep the small deployed swap detector.
-!models/
-!models/swapdet_deployed.pt
