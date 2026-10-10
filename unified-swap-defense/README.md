@@ -62,3 +62,15 @@ Open the **Unified Checkpoint** tab. More detail: [Getting started](docs/getting
 | `models/swapdet_deployed.pt` | Deployed detector (9 MB) |
 | `eval_results/` | Metrics and figures |
 | `docs/` | Architecture, evaluation, security, limitations |
+
+## CI
+
+`.github/workflows/ci.yml` runs on changes to this folder:
+
+| Job | Gates |
+|---|---|
+| `python` | syntax / undefined names (ruff), compile, `test_decide.py` |
+| `frontend` | FaceGuard UI `npm ci` and production build (warnings are errors); `npm audit` is reported but non-blocking |
+
+It does **not** run the models, the API or the evaluation scripts: those need GPU weights and datasets that are not in git.
+Model quality is therefore not gated by CI; the numbers in `eval_results/` are from local runs.

@@ -1,0 +1,75 @@
+# Checks for unified-swap-defense/. They run without GPU, model weights or datasets (none are in git),
+# so they gate syntax, the verdict logic and the frontend build, not model quality.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+    paths: ["unified-swap-defense/**", ".github/workflows/ci.yml"]
+  push:
+    branches: [main]
+    paths: ["unified-swap-defense/**", ".github/workflows/ci.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: unified-swap-defense
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"   # matches the cp310 InsightFace wheel the project targets
+          cache: pip
+
+      - name: Install (CPU torch, enough to import swapdet)
+        run: |
+          pip install --index-url https://download.pytorch.org/whl/cpu torch torchvision
+          pip install "numpy<2" opencv-python-headless ruff==0.9.10
+
+      - name: Syntax and undefined names
+        run: ruff check --select E9,F63,F7,F82 .
+
+      - name: Compile
+        run: python -m py_compile *.py
+
+      - name: Verdict logic
+        run: python test_decide.py
+
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: unified-swap-defense/FaceGuard-Digital-Forensic-System/frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: unified-swap-defense/FaceGuard-Digital-Forensic-System/frontend/package-lock.json
+
+      - run: npm ci --no-audit --no-fund
+
+      - name: Build (CI=true makes warnings errors)
+        run: npm run build
+        env:
+          CI: "true"
+
+      # Informational: the CRA dependency tree has known advisories (97 at last count, 3 critical),
+      # so a blocking gate would be permanently red. Visible in the log; fix by migrating off react-scripts.
+      - name: Dependency audit (non-blocking)
+        run: npm audit --audit-level=high
+        continue-on-error: true
