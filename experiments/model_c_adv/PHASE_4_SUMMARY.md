@@ -1,3 +1,13 @@
+> **Correction note (added during review).** Read the claims below with these caveats:
+> 1. **Accuracy under attack is low.** `robustness_matrix.csv` (n = 572) gives C-Adv an overall accuracy of 6.5% / 21.2% / 29.4% at
+>    FGSM epsilon 0.01 / 0.05 / 0.10 (C-Control: 0.9% / 18.7% / 18.7%). The "61% impersonation recall" below is one class's recall; it can stay
+>    high for a classifier that over-predicts "impersonation" under noise, so it is not evidence of robustness on its own.
+> 2. **"Perfectly generalizes" and "proof of the research hypothesis" are not supported** by those numbers.
+> 3. **Only FGSM was used.** A stronger logit-margin PGD with restarts, applied later to a separate swap detector
+>    (`unified-swap-defense/eval_results/margin_attack_results.json`), showed that FGSM/BCE-PGD robustness numbers can be gradient-masking artifacts.
+>    C-Adv was not re-tested with it.
+> 4. **This is not the live model.** C-Adv (`src/models/model_c.py`) is not the model used by the live pipeline, which loads `ModelCV4`.
+
 # Phase 4 Summary: Adversarial Training (C-Adv)
 
 This phase successfully augmented the baseline Identity-Aware Anti-Impersonation system (`C-Control`) into an adversarially robust model (`C-Adv`). By training the model against dynamically generated Fast Gradient Sign Method (FGSM) attacks, the system learned to detect synthetic impersonation attempts even when an attacker injects mathematically optimized, sub-pixel visual noise designed to fool the network.
