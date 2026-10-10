@@ -61,7 +61,9 @@ jobs:
           cache: npm
           cache-dependency-path: unified-swap-defense/FaceGuard-Digital-Forensic-System/frontend/package-lock.json
 
-      - run: npm ci --no-audit --no-fund
+      # react-scripts 5.0.1 declares typescript ^3 || ^4 as a peer while package.json pins ^5.5.4, which npm 10 rejects
+      # (ERESOLVE). --legacy-peer-deps is the usual CRA + TS5 workaround; the real fix is upgrading off react-scripts.
+      - run: npm ci --legacy-peer-deps --no-audit --no-fund
 
       - name: Build (CI=true makes warnings errors)
         run: npm run build
