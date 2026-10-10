@@ -1,5 +1,6 @@
 import asyncio
 import os
+import re
 import cv2
 import numpy as np
 import glob
@@ -73,15 +74,20 @@ async def enroll_identity(identity_name: str = Form(...), files: List[UploadFile
     if not files:
         raise HTTPException(status_code=400, detail="No reference images provided.")
         
+    # identity_name and file.filename are client-controlled: keep them out of path traversal
+    safe_identity_name = re.sub(r"[^a-zA-Z0-9_\-]", "", identity_name)
+    if not safe_identity_name:
+        raise HTTPException(status_code=400, detail="Invalid identity name")
+
     # Write uploaded files to temp directory
-    temp_dir = f"experiments/live_demo/temp_enrollment/{identity_name}"
+    temp_dir = f"experiments/live_demo/temp_enrollment/{safe_identity_name}"
     os.makedirs(temp_dir, exist_ok=True)
     
     image_paths = []
     try:
         for file in files:
             content = await file.read()
-            path = os.path.join(temp_dir, file.filename)
+            path = os.path.join(temp_dir, os.path.basename(file.filename or "upload.jpg"))
             with open(path, "wb") as f:
                 f.write(content)
             image_paths.append(path)

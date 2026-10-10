@@ -1,0 +1,55 @@
+{
+  "n": 150,
+  "threshold": 0.4,
+  "swap_attack": {
+    "n_pairs": 150,
+    "real_flagged_fake_rate(FPR)": 0.74,
+    "swapped_flagged_fake_rate(detection)": 0.9066666666666666,
+    "mean_score_real": 0.569909393787384,
+    "mean_score_swapped": 0.7058351635932922,
+    "swap_evades_detection_rate": 0.09333333333333334
+  },
+  "adv_start_n_caught_fakes": 139,
+  "evasion": {
+    "FGSM eps=0/255": {
+      "detection_rate": 1.0,
+      "attack_success": 0.0
+    },
+    "FGSM eps=1/255": {
+      "detection_rate": 0.02158273381294964,
+      "attack_success": 0.9784172661870504
+    },
+    "FGSM eps=2/255": {
+      "detection_rate": 0.014388489208633094,
+      "attack_success": 0.9856115107913669
+    },
+    "FGSM eps=4/255": {
+      "detection_rate": 0.02158273381294964,
+      "attack_success": 0.9784172661870504
+    },
+    "FGSM eps=8/255": {
+      "detection_rate": 0.02158273381294964,
+      "attack_success": 0.9784172661870504
+    },
+    "PGD-10 eps=0/255": {
+      "detection_rate": 1.0,
+      "attack_success": 0.0
+    },
+    "PGD-10 eps=1/255": {
+      "detection_rate": 0.0,
+      "attack_success": 1.0
+    },
+    "PGD-10 eps=2/255": {
+      "detection_rate": 0.0,
+      "attack_success": 1.0
+    },
+    "PGD-10 eps=4/255": {
+      "detection_rate": 0.0,
+      "attack_success": 1.0
+    },
+    "PGD-10 eps=8/255": {
+      "detection_rate": 0.0,
+      "attack_success": 1.0
+    }
+  }
+}

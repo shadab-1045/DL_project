@@ -1,3 +1,13 @@
+> **Correction note (added during review).** Read the headline numbers with these caveats:
+> 1. **The 94% "rejection" describes this probe set, not ArcFace's resistance to InSwapper.** In `experiments/final_evaluation/final_decision_results.csv`
+>    the 100 impersonation probes have a median ArcFace similarity of **0.105** to the claimed identity (threshold 0.2445); all 100 had a face detected.
+>    These swaps barely carry the source identity. On a separate held-out set of 262 LFW / FaceForensics++ InSwapper swaps
+>    (`unified-swap-defense/eval_results/system_results.json`) the median similarity is ~0.9 and ArcFace accepts **99.6%**. The script that
+>    generated this repository's swap probes (`generate_controlled_swaps.py`) is not in the repository, so the cause of the difference is not established.
+> 2. **Usability cost.** Genuine `VERIFIED` falls from 71.6% to 51.4% once Model C is added (see section 5 onward).
+> 3. **FGSM only, and a small test set** (100 impersonation probes). The adversarial rows should not be read as general robustness.
+> 4. **Model C here is C-Control / C-Adv**, not the `ModelCV4` fusion model used by the live pipeline.
+
 # Phase 5 Final Held-Out Test Evaluation Report
 
 ## 1. Executive Summary

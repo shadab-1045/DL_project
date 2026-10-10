@@ -1,0 +1,29 @@
+{
+  "model": "faceguard_phase2_best.h5",
+  "n_real": 1000,
+  "n_fake": 1000,
+  "threshold": 0.4,
+  "accuracy": 0.5745,
+  "precision": 0.5562264150943397,
+  "recall": 0.737,
+  "f1": 0.633978494623656,
+  "auc": 0.6112839999999999,
+  "confusion_matrix[[TN,FP],[FN,TP]]": [
+    [
+      412,
+      588
+    ],
+    [
+      263,
+      737
+    ]
+  ],
+  "per_method_detection_rate": {
+    "Deepfakes": 0.815,
+    "Face2Face": 0.715,
+    "FaceShifter": 0.755,
+    "FaceSwap": 0.765,
+    "NeuralTextures": 0.635
+  },
+  "real_correctly_accepted": 0.412
+}

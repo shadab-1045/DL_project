@@ -1,0 +1,22 @@
+{
+  "model": "clean",
+  "K_defense": 8,
+  "K_attack_EOT": 4,
+  "pgd_steps": 30,
+  "n_fake": 263,
+  "n_real": 263,
+  "plain": {
+    "clean_swap_detected": 0.9467680608365019,
+    "clean_real_false_alarm": 0.04182509505703422,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps1/255": 0.0,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps2/255": 0.0,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps4/255": 0.0
+  },
+  "randomized": {
+    "clean_swap_detected": 0.8783269961977186,
+    "clean_real_false_alarm": 0.16730038022813687,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps1/255": 0.3193916349809886,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps2/255": 0.20912547528517111,
+    "swap_detected_under_adaptive_marginEOT_PGD30_eps4/255": 0.0076045627376425855
+  }
+}
