@@ -24,10 +24,11 @@ This folder **adds to** the research code in the repository root and reuses its 
 
 ## What it needs from the root repository
 
-- `src/runtime/live_pipeline_v4.py` (`LiveInferencePipelineV4`), which the API loads. It requires the Model C V4 checkpoint at `experiments/model_c_v4/best_fusion_model.pt` and `models/inswapper_128.onnx`. Neither is stored in git.
+- `src/runtime/live_pipeline_v4.py` (`LiveInferencePipelineV4`), which the API loads, and `models/inswapper_128.onnx` (not stored in git).
+- Model C V4 is **not** loaded by default here: `unified_api.py` sets `DL_LOAD_MODEL_C=0`, because the verdict does not use it. Set `DL_LOAD_MODEL_C=1` to load it, which needs `experiments/model_c_v4/best_fusion_model.pt` (also not in git). The root repository's own server is unchanged: Model C loads unless the variable is `0`.
+- With Model C disabled the pipeline's legacy `final_state` is always `UNKNOWN` (fail closed, never `VERIFIED`); the unified verdict does not read it.
 - The two-line hook in `src/runtime/live_pipeline_v4.py` and the path sanitisation in `src/api/server.py` added by this change.
 
-Running the verdict endpoint therefore also runs Model C V4 on every frame whose identity matched, although the verdict ignores its output. This is a known cost; see the PR description.
 
 ## Run
 
@@ -40,6 +41,7 @@ pip install "../insightface-0.7.3-cp310-cp310-win_amd64.whl"   # Windows only
 python make_demo_identity.py                # exports the "victim" identity the attack impersonates
 python enroll_user.py YourName --webcam     # enroll yourself (6 snapshots)
 python test_decide.py                       # verdict-logic checks, no models needed beyond torch
+python test_model_c_optional.py             # Model C can be skipped without ever reporting VERIFIED
 
 uvicorn unified_api:app --host 127.0.0.1 --port 8001
 

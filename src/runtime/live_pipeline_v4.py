@@ -10,6 +10,11 @@ from src.runtime.live_swap import NativeInSwapper
 from src.models.model_c_v4 import ModelCV4
 from src.preprocessing.alignment import align_face
 
+def _model_c_enabled():
+    """On by default. unified-swap-defense sets DL_LOAD_MODEL_C=0 because its verdict does not use Model C."""
+    return os.getenv("DL_LOAD_MODEL_C", "1") != "0"
+
+
 class LiveInferencePipelineV4:
     def __init__(self, 
                  fusion_checkpoint="experiments/model_c_v4/best_fusion_model.pt", 
@@ -27,16 +32,18 @@ class LiveInferencePipelineV4:
         print("Initializing Native InSwapper...")
         self.swapper = NativeInSwapper()
         
-        # 3. Initialize Model C V4
-        print("Initializing Model C V4...")
-        self.c_adv_v4 = ModelCV4().to(device)
-        if os.path.exists(fusion_checkpoint):
-            # weights_only=False needed because of PyTorch serialization quirks with sklearn if present, but we just load state dict
-            self.c_adv_v4.load_state_dict(torch.load(fusion_checkpoint, map_location=device))
-        else:
-            raise FileNotFoundError(f"V4 checkpoint not found: {fusion_checkpoint}")
-            
-        self.c_adv_v4.eval()
+        # 3. Initialize Model C V4 (skipped when DL_LOAD_MODEL_C=0)
+        self.c_adv_v4 = None
+        if _model_c_enabled():
+            print("Initializing Model C V4...")
+            self.c_adv_v4 = ModelCV4().to(device)
+            if os.path.exists(fusion_checkpoint):
+                # weights_only=False needed because of PyTorch serialization quirks with sklearn if present, but we just load state dict
+                self.c_adv_v4.load_state_dict(torch.load(fusion_checkpoint, map_location=device))
+            else:
+                raise FileNotFoundError(f"V4 checkpoint not found: {fusion_checkpoint}")
+
+            self.c_adv_v4.eval()
         
         # V4 Preprocessing
         self.transform = transforms.Compose([
@@ -122,7 +129,9 @@ class LiveInferencePipelineV4:
         p_synth_val = 0.0
         p_id_val = 0.0
         
-        if raw_accepted and matched_identity is not None:
+        if self.c_adv_v4 is None:
+            pass  # Model C disabled: ArcFace-only result; final_state is forced to UNKNOWN below (fail closed)
+        elif raw_accepted and matched_identity is not None:
             c_start = time.time()
             
             # Align face
@@ -181,6 +190,9 @@ class LiveInferencePipelineV4:
             else:
                 final_state = "UNKNOWN"
                 
+        if self.c_adv_v4 is None:  # no anti-impersonation signal here, so never report VERIFIED
+            raw_final_state = final_state = "UNKNOWN"
+
         total_latency = time.time() - start_time
         fps = 1.0 / total_latency if total_latency > 0 else 0.0
         
