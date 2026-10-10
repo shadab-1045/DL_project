@@ -20,7 +20,9 @@ This folder **adds to** the research code in the repository root and reuses its 
 | Swap detector, verdict logic, unified API, evaluation scripts, `docs/` | this folder | Arsal |
 | FaceGuard (Keras deepfake classifier + React UI) | `FaceGuard-Digital-Forensic-System/` | Bundled earlier project, with its own README and licence |
 
-> In the standalone version of this work the repository root was called `DL_project/`. Here, wherever the docs say `DL_project/`, read **the repository root**. This folder's scripts have been adapted to that layout.
+> This work is also maintained as a standalone repository: [NotArsal/DL-Adverserial](https://github.com/NotArsal/DL-Adverserial).
+>
+> In the standalone version the repository root was called `DL_project/`. Here, wherever the docs say `DL_project/`, read **the repository root**. This folder's scripts have been adapted to that layout.
 
 ## What it needs from the root repository
 
