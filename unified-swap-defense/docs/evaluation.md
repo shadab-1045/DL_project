@@ -32,9 +32,9 @@ Per-frame results of the deployed detector on the held-out test crops:
 |---|---|---|---|
 | 0.8 | 90.5% | 1.1% | |
 | 0.5 | 94.7% | 4.2% | End-to-end attack success 5.3% (`system_results.json`) |
-| **0.3** | **96.2%** | **6.1%** | **Deployed.** Re-computed from `swapdet_deployed.pt` during this documentation pass. |
+| **0.3** | **96.2%** | **6.1%** | **Deployed.** End-to-end attack success 3.8% (10 of 262). From `eval_deployed.py`. |
 
-At 0.3, at most 3.8% of swaps are missed. Because ArcFace accepts 99.6% of them, end-to-end attack success is bounded by roughly that figure. This is derived, not separately measured.
+At the deployed 0.3, 3.8% of swaps get through the whole system (ArcFace accepts **and** the detector does not flag): 10 of 262 pairs. Measured by `eval_deployed.py` on `swapdet_deployed.pt`, written to `eval_results/deployed_operating_point.json`.
 
 Other quality numbers for the same model (`swapdet_results.json`, n = 526): accuracy 95.2% at 0.5, AUC 0.993.
 
@@ -95,7 +95,7 @@ Source: `randomized_defense_clean.json`. It helps a little at ε = 1/255, costs 
 
 ![Attack success and detection under attack](../eval_results/summary.png)
 
-*Left panel: the "+ swap detector (no adversary)" bar uses the 0.8 operating point (9.5% attack success), not the deployed 0.3. Right panel: detection of the plain and randomized detectors under white-box attack.*
+*Left panel: ArcFace alone, the deployed detector at 0.3 with no adversary (3.8%), and the detector at 0.5 under a white-box attack at ε = 1/255 (`system_results.json`). Right panel: detection of the plain and randomized detectors under white-box attack.*
 
 ## FaceGuard Keras model
 
@@ -119,6 +119,7 @@ python train_swapdet.py 10                    # clean, control, adversarial (eps
 python train_swapdet.py 10 1                  # adversarial only, eps 1/255
 python train_swapdet.py 10 1 0.25             # ... with adversarial loss weight 0.25
 python eval_system.py                         # -> eval_results/system_results.json
+python eval_deployed.py                       # -> eval_results/deployed_operating_point.json (deployed weights, thresholds 0.3 / 0.5 / 0.8)
 python eval_margin_attack.py                  # -> margin_attack_results.json
 python eval_randomized.py                     # -> randomized_defense_clean.json
 python eval_faceguard.py                      # FaceGuard on FF++
