@@ -1,0 +1,12 @@
+﻿FaceForensics++/
+data/
+files/
+files.zip
+faceguard-forensic-engine/
+__pycache__/
+*.pyc
+venv/
+frontend/node_modules/
+.env
+.env.local
+frontend/.env.local
