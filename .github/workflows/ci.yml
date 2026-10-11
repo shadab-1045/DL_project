@@ -46,6 +46,9 @@ jobs:
       - name: Verdict logic
         run: python test_decide.py
 
+      - name: Model C optional in the live pipeline
+        run: python test_model_c_optional.py
+
   frontend:
     runs-on: ubuntu-latest
     timeout-minutes: 15

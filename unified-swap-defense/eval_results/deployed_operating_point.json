@@ -1,0 +1,25 @@
+{
+  "weights": "swapdet_deployed.pt",
+  "n_fake": 263,
+  "n_real": 263,
+  "n_pairs": 262,
+  "arcface_threshold": 0.24452903866767883,
+  "attack_success_vs_ArcFace_only": 0.9961832061068703,
+  "thresholds": {
+    "0.3": {
+      "swaps_caught": 0.9619771863117871,
+      "real_flagged": 0.060836501901140684,
+      "attack_success_vs_system": 0.03816793893129771
+    },
+    "0.5": {
+      "swaps_caught": 0.9467680608365019,
+      "real_flagged": 0.04182509505703422,
+      "attack_success_vs_system": 0.05343511450381679
+    },
+    "0.8": {
+      "swaps_caught": 0.9049429657794676,
+      "real_flagged": 0.011406844106463879,
+      "attack_success_vs_system": 0.09541984732824428
+    }
+  }
+}
